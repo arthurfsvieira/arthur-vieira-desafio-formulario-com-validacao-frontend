@@ -14,15 +14,14 @@ const Form = () => {
     try {
       localStorage.setItem('memberData', JSON.stringify(data));
       setStatusMessage("Cadastro realizado com sucesso!");
-      reset();
     } catch (error) {
       setStatusMessage("Falha ao cadastrar. Verifique os dados informados.");
     }
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Cadastro de Membro</h2>
+    <div className="max-w-md mx-auto bg-gray-100 p-8 rounded-lg shadow-lg">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Cadastro de Membros</h2>
       
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
