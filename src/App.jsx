@@ -1,16 +1,13 @@
-
-import './App.css'
+import React from 'react';
+import './App.css';
+import Form from './components/Form';
 
 function App() {
-
   return (
-    <>
-      <main>
-        <h1>Seja bem vindo! :)</h1>
-        <p>Terceiro Desafio: Formulário de Cadastro de Membros</p>
-      </main>
-    </>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <Form />
+    </div>
   );
 }
 
-export default App
+export default App;
